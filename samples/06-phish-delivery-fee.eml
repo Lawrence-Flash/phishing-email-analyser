@@ -1,0 +1,32 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: DHL Express <notices@example.com>
+To: Resident <resident@example.net>
+Reply-To: Fees <fees@example.net>
+Return-Path: <>
+Message-ID: <parcel-1@mail.example>
+Subject: Delivery fee due for your parcel
+Received: from mail.example.com (mail.example.com [203.0.113.10]) by mx.example.net with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+Content-Type: multipart/mixed; boundary="sample-06"
+
+--sample-06
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Your parcel is held. Pay the delivery fee within 24 hours to release your shipment.
+
+http://203.0.113.50/parcel/release
+
+--sample-06
+Content-Type: text/html; name="tracking.html"
+Content-Disposition: attachment; filename="tracking.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+U1lOVEhFVElDIHRyYWNraW5nIHBhZ2UgZm9yIGEgbGFiIG9ubHkuPC9ib2R5
+PjwvaHRtbD4K
+
+--sample-06--

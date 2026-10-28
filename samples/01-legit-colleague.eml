@@ -1,0 +1,15 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: Alex Example <alex@example.com>
+To: Sam Example <sam@example.com>
+Reply-To: Alex Example <alex@example.com>
+Return-Path: <alex@example.com>
+Message-ID: <lunch-20261028@example.com>
+Subject: Lunch on Friday
+Received: from mail.example.com (mail.example.com [203.0.113.10]) by mx.example.net with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Hi Sam, are you free for lunch on Friday at 12:30? The cafe downstairs is fine.

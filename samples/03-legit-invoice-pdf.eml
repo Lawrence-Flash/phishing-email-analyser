@@ -1,0 +1,32 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: Example Billing <billing@example.net>
+To: Accounts <accounts@example.com>
+Reply-To: Example Billing <billing@example.net>
+Return-Path: <billing@example.net>
+Message-ID: <invoice-1042@example.net>
+Subject: Invoice 1042
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=example.net; dkim=pass header.d=example.net; dmarc=pass header.from=example.net
+Received: from mail.example.net (mail.example.net [198.51.100.20]) by mx.example.com with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+Content-Type: multipart/mixed; boundary="sample-03"
+
+--sample-03
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Please find invoice 1042 attached. Payment is due within 30 days on the account you already have on file.
+
+https://example.net/invoices/1042
+
+--sample-03
+Content-Type: application/pdf; name="statement.pdf"
+Content-Disposition: attachment; filename="statement.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKc3ludGhldGljIHBoaXNoY2hlY2sgZml4dHVyZQolJUVPRgo=
+
+--sample-03--
