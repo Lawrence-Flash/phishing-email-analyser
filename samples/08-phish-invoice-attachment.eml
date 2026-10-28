@@ -1,0 +1,37 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: Standard Bank Accounts <billing@standardbnk.example>
+To: Accounts <accounts@example.com>
+Reply-To: Payments <pay@example.com>
+Return-Path: <billing@standardbnk.example>
+Message-ID: <inv-7781@standardbnk.example>
+Subject: Updated banking details for invoice 7781
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=standardbnk.example; dkim=fail header.d=standardbnk.example; dmarc=fail header.from=standardbnk.example
+Received: from mail.standardbnk.example (mail.standardbnk.example [198.51.100.20]) by mx.example.com with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+Content-Type: multipart/mixed; boundary="sample-08"
+
+--sample-08
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Our banking details have changed. Pay this invoice immediately from the new bank account.
+
+--sample-08
+Content-Type: application/octet-stream; name="invoice.pdf.exe"
+Content-Disposition: attachment; filename="invoice.pdf.exe"
+Content-Transfer-Encoding: base64
+
+c3ludGhldGljIHBoaXNoY2hlY2sgZml4dHVyZSwgbm90IGEgcHJvZ3JhbQo=
+
+--sample-08
+Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="payment.docm"
+Content-Disposition: attachment; filename="payment.docm"
+Content-Transfer-Encoding: base64
+
+c3ludGhldGljIHBoaXNoY2hlY2sgbWFjcm8gZml4dHVyZSwgbm90IGEgZG9jdW1lbnQK
+
+--sample-08--

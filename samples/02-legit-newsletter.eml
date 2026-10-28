@@ -1,0 +1,19 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: Team News <team@news.example>
+To: Alex Example <alex@example.com>
+Reply-To: Team News <team@news.example>
+Return-Path: <bounces@news.example>
+Message-ID: <oct-2026@news.example>
+Subject: October project update
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=news.example; dkim=pass header.d=news.example; dmarc=pass header.from=news.example
+Received-SPF: pass (example.com: synthetic) client-ip=203.0.113.10;
+Received: from mail.news.example (mail.news.example [203.0.113.10]) by mx.example.net with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Hello team, the October note is below. The deploy window is Thursday 10:00 SAST. Reply on the thread if you want a calendar invite.
+
+https://news.example/2026/10/team-update

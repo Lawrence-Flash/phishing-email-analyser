@@ -1,0 +1,32 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: FNB Support <alerts@fnb-secure.example>
+To: Customer <customer@example.com>
+Reply-To: FNB Support <helpdesk@example.com>
+Return-Path: <bounce@example.net>
+Message-ID: <alert-1@mail.example>
+Subject: FNB account suspended
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=fnb-secure.example; dkim=fail header.d=fnb-secure.example; dmarc=fail header.from=fnb-secure.example
+Received-SPF: fail (example.com: synthetic) client-ip=198.51.100.20;
+Received: from mail.fnb-secure.example (mail.fnb-secure.example [198.51.100.20]) by mx.example.com with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+Content-Type: multipart/alternative; boundary="sample-04"
+
+--sample-04
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Urgent: your FNB account is suspended. Verify your account immediately. Confirm the new bank account within 24 hours.
+
+http://fnb-secure.example/login/verify
+
+--sample-04
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html><body><p>Urgent: your FNB account is suspended. Verify your account immediately. Confirm the new bank account within 24 hours.</p><p><a href="http://fnb-secure.example/login/verify">https://www.fnb.co.za/online/login</a></p></body></html>
+
+--sample-04--

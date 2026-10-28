@@ -1,0 +1,69 @@
+{
+  "tool": "phishcheck",
+  "version": "0.1.0",
+  "source": "samples/05-phish-sars-refund.eml",
+  "defanged": true,
+  "note": "Observed indicators for a ticket or a hunt. Do not load this file into a blocklist without review. Official brand domains and display-text lures are omitted. reserved=true marks documentation names and ranges.",
+  "indicators": [
+    {
+      "type": "domain",
+      "value": "sars-efiling[.]example",
+      "context": "header:from",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "sars-efiling[.]example",
+      "context": "header:reply-to",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "sars-efiling[.]example",
+      "context": "header:return-path",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "sars-efiling[.]example",
+      "context": "header:message-id",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "xn--srs-6cd[.]example",
+      "context": "link:html",
+      "reserved": true
+    },
+    {
+      "type": "url",
+      "value": "hxxp://xn--srs-6cd[.]example/efiling/login",
+      "context": "link:html",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "xn--srs-6cd[.]example",
+      "context": "link:text",
+      "reserved": true
+    },
+    {
+      "type": "url",
+      "value": "hxxp://xn--srs-6cd[.]example/efiling/login",
+      "context": "link:text",
+      "reserved": true
+    },
+    {
+      "type": "domain",
+      "value": "mail[.]sars-efiling[.]example",
+      "context": "received",
+      "reserved": true
+    },
+    {
+      "type": "ip",
+      "value": "198[.]51[.]100[.]20",
+      "context": "received",
+      "reserved": true
+    }
+  ]
+}

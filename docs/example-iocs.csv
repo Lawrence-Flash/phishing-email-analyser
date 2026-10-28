@@ -1,0 +1,11 @@
+type,value,context,reserved
+domain,sars-efiling[.]example,header:from,true
+domain,sars-efiling[.]example,header:reply-to,true
+domain,sars-efiling[.]example,header:return-path,true
+domain,sars-efiling[.]example,header:message-id,true
+domain,xn--srs-6cd[.]example,link:html,true
+url,hxxp://xn--srs-6cd[.]example/efiling/login,link:html,true
+domain,xn--srs-6cd[.]example,link:text,true
+url,hxxp://xn--srs-6cd[.]example/efiling/login,link:text,true
+domain,mail[.]sars-efiling[.]example,received,true
+ip,198[.]51[.]100[.]20,received,true

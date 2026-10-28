@@ -1,0 +1,32 @@
+X-Phishcheck-Sample: synthetic
+X-Phishcheck-Warning: Synthetic fixture. Not a real email.
+MIME-Version: 1.0
+Date: Wed, 28 Oct 2026 08:15:00 +0200
+From: SARS eFiling <refunds@sars-efiling.example>
+To: Taxpayer <taxpayer@example.com>
+Reply-To: SARS eFiling <refunds@sars-efiling.example>
+Return-Path: <bounce@sars-efiling.example>
+Message-ID: <refund-1@sars-efiling.example>
+Subject: SARS refund waiting on eFiling
+Authentication-Results: mx.example.com; spf=softfail smtp.mailfrom=sars-efiling.example; dkim=none header.d=sars-efiling.example; dmarc=fail header.from=sars-efiling.example
+Received-SPF: softfail (example.com: synthetic) client-ip=198.51.100.20;
+Received: from mail.sars-efiling.example (mail.sars-efiling.example [198.51.100.20]) by mx.example.com with ESMTPS id synthetic; Wed, 28 Oct 2026 08:15:00 +0200
+Content-Type: multipart/alternative; boundary="sample-05"
+
+--sample-05
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+SYNTHETIC SAMPLE. Not a real email. Created for the phishcheck demo. Domains are under .example (RFC 2606) or example.com/net/org, and IP addresses are in documentation ranges (RFC 5737). Do not treat this file as a live incident.
+
+Your SARS refund is waiting on eFiling. Enter the OTP within 24 hours or the refund will be cancelled.
+
+http://xn--srs-6cd.example/efiling/login
+
+--sample-05
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html><body><p>Your SARS refund is waiting on eFiling. Enter the OTP within 24 hours or the refund will be cancelled.</p><p><a href="http://xn--srs-6cd.example/efiling/login">https://www.sars.gov.za/efiling</a></p></body></html>
+
+--sample-05--
