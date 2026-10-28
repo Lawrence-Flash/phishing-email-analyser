@@ -68,8 +68,12 @@ def _parse_received(value: str, index: int) -> Hop:
 
 
 def strip_html(html: str) -> str:
-    text = re.sub(r"(?is)<script\b[^>]*>.*?</script>", " ", html)
-    text = re.sub(r"(?is)<style\b[^>]*>.*?</style>", " ", text)
+    """Drop tags for the phrase scanner. Script and style bodies are removed.
+
+    End tags allow trailing whitespace so ``</script >`` is not left behind.
+    """
+    text = re.sub(r"(?is)<script\b[^>]*>.*?</script[^>]*>", " ", html)
+    text = re.sub(r"(?is)<style\b[^>]*>.*?</style[^>]*>", " ", text)
     text = re.sub(r"(?is)<[^>]+>", " ", text)
     return re.sub(r"\s+", " ", unescape(text)).strip()
 

@@ -47,6 +47,17 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(mail.subject, "")
         self.assertEqual(mail.attachments, ())
 
+    def test_script_end_tag_with_whitespace_is_removed(self) -> None:
+        from phishcheck.parse import strip_html
+
+        text = strip_html("<script>urgent</script >Please review the note.</style >")
+        # The style closer above is not a style element; the script body must go.
+        self.assertNotIn("urgent", text)
+        self.assertIn("Please review the note.", text)
+        styled = strip_html("<style>urgent</style >Visible")
+        self.assertNotIn("urgent", styled)
+        self.assertIn("Visible", styled)
+
 
 if __name__ == "__main__":
     unittest.main()
